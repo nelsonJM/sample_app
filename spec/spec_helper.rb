@@ -39,4 +39,7 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
+
+  #To get the test to run properly, we have to add a line to the spec_helper.rb file, as shown in Listing 3.10. (In the full third edition of the Rails Tutorial, I plan to eliminate this requirement by adopting the newer technique of feature specs.) - Hartl
+  config.include Capybara::DSL
 end
